@@ -4,4 +4,4 @@
 -- After a tie, the next ranking number should be the next consecutive integer value. In other words, there should be no holes between ranks.
 LeetCode: https://leetcode.com/problems/rank-scores/
 
-SELECT score, DENSE_RANK() over(order by score desc) AS "rank" FROM scores ORDER BY score DESC;
+SELECT score, DENSE_RANK() over(order by score desc) AS "rank" FROM scores;
