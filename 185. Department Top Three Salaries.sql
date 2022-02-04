@@ -5,6 +5,6 @@ SELECT Department,Employee, Salary from(
     SELECT d.name as Department,
        e.name as Employee,
        e.salary as Salary,
-    dense_rank() OVER (partition by d.id order by e.salary desc ) rnk 
-    from Employee e join Department d on e.departmentId = d.id) x
-    where x.rnk<=3
+    dense_rank() OVER (PARTITION BY d.id ORDER BY BY e.salary DESC ) rnk 
+    FROM Employee e JOIN Department d ON e.departmentId = d.id) x
+    WHERE x.rnk<=3
