@@ -1,5 +1,5 @@
 -- Write an SQL query to report all customers who never order anything.
-LeetCode: https://leetcode.com/problems/customers-who-never-order/submissions/
+-- LeetCode: https://leetcode.com/problems/customers-who-never-order/submissions/
 
 SELECT 
     name AS Customers
